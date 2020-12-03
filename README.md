@@ -1,11 +1,11 @@
 # RelhaxMirrorFilesCreator
-## Created by:
+## Created by @Arkhorse
 
 # How to use:
 
-[] Alter the required lines (see below)
-[] Run the batch
-[] update the database
+- [] Alter the required lines (see below)
+- [] Run the batch
+- [] update the database
 
 # Requirements:
 
