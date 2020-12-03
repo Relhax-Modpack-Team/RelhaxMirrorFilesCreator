@@ -5,6 +5,10 @@ rem These are the variables you need to alter every time you want to update
 rem Make sure to delete the old files before running this bat. I will not be adding that for now.
 rem This is only for none XVM
 
+echo "Did you make sure to update the gameVersion and date variables?"
+echo "If you didnt, close this batch, and update them"
+pause
+
 set "gameVersion=1.10.1.4"
 set "date=2020-11-25"
 
