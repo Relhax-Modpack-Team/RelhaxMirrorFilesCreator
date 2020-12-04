@@ -2,10 +2,9 @@
 title "Non XVM Automation Batch script. Version 1.1. Created by The Illusion."
 
 rem These are the variables you need to alter every time you want to update
-rem Make sure to delete the old files before running this bat. I will not be adding that for now.
 rem This is only for none XVM
 
-echo "Did you make sure to update the gameVersion and date variables?"
+echo "Did you make sure to update the gameVersion variable?"
 echo "If you didnt, close this batch, and update them"
 pause
 
@@ -41,16 +40,7 @@ rd /q /s mvi_hangar
 rd /q /s mvi_hangar_files
 rd /q /s mvi_hangar_clear
 rd /q /s mvi_hangar_clear-all
-DEL /q mvi_battle.zip
-DEL /q mvi_battle_clear.zip
-DEL /q mvi_hangar.zip
-DEL /q mvi_hangar_clear.zip
-DEL /q mvi_hangar_clear-all.zip
-DEL /q %mvi_battle%_%gameVersion%_%date%.zip
-DEL /q %mvi_battle_clear%_%gameVersion%_%date%.zip
-del /q %mvi_hangar%_%gameVersion%_%date%.zip
-DEL /q %mvi_hangar_clear%_%gameVersion%_%date%.zip
-DEL /q %mvi_hangar_clear-all%_%gameVersion%_%date%.zip
+DEL /q *.zip
 
 rem This will download the files. Yay! More automation!
 
