@@ -1,5 +1,5 @@
 @echo off
-title "Non XVM Automation Batch script. Version 1.1. Created by The Illusion."
+title "Non XVM Automation Batch script. Version 1.2. Created by The Illusion."
 
 rem These are the variables you need to alter every time you want to update
 rem This is only for none XVM
