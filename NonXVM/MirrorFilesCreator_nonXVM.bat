@@ -12,7 +12,6 @@ set "gameVersion=1.10.1.4"
 set "date=2020-11-25"
 
 rem All variables that are required to make this work.
-set "modsDIR=mods\%gameVersion%\"
 
 set "mvi_battle=LogicalDependency_MVI_BATTLE_noXVM"
 set "mvi_battle_files=mvi_battle\mods\%gameVersion%\mvi_battle.wotmod"
@@ -28,6 +27,28 @@ set "mvi_hangar_clear_files=mvi_hangar_clear\mods\%gameVersion%\mvi_hangar.wotmo
 
 set "mvi_hangar_clear-all=LogicalDependency_MVI_HANGAR_CLEAR_ALL_noXVM"
 set "mvi_hangar_clear-all_files=mvi_hangar_clear-all\mods\%gameVersion%\mvi_hangar.wotmod"
+
+Echo "Game Version or versiondir?"
+    :start
+        ECHO.
+            echo "0. Game Version"
+            echo "1. versiondir"
+			set choice=
+			set /p choice=Which game are you testing for?  
+			if not '%choice%'=='' set choice=%choice:~0,1%
+			if '%choice%'=='0' goto GameVersion0
+			if '%choice%'=='1' goto VersionDir0
+			ECHO "%choice%" is not valid, try again
+        echo.
+        goto start
+:GameVersion0
+@set "modsDIR=mods\%gameVersion%\"
+goto :Continue
+
+:VersionDir0
+@set "modsDIR=mods\versiondir\"
+
+:Continue
 
 @echo off
 cls
