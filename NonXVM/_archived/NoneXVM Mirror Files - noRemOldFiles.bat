@@ -3,8 +3,8 @@ rem These are the variables you need to alter every time you want to update
 rem Make sure to delete the old files before running this bat. I will not be adding that for now.
 rem This is only for none XVM
 
-set "gameVersion=1.12.1.0"
-set "date=2021-04-20"
+set "gameVersion=1.13.0.0"
+set "date=2021-06-23"
 
 rem All variables that are required to make this work.
 set "modsDIR=mods\versiondir\"
